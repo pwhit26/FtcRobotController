@@ -49,6 +49,6 @@ public class test extends LinearOpMode {
         pointToGoTo.add(new PosesAndActions(Pos4, ""));
         pointToGoTo.add(new PosesAndActions(endPos, ""));
         follower.reinit(pointToGoTo);
-        follower.goToPoints(true, maxVel);e
+        follower.goToPoints(true, maxVel);
     }
 }
