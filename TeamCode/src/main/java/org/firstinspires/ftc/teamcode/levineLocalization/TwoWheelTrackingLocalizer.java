@@ -41,11 +41,11 @@ public class TwoWheelTrackingLocalizer extends TwoTrackingWheelLocalizer {
     public static double GEAR_RATIO = 1; // output (wheel) speed / input (encoder) speed
 
     //Normal Bot
-    public static double PARALLEL_X = 0; // X is the up and down direction
-    public static double PARALLEL_Y = -6.75; // Y is the strafe direction
+    public static double PARALLEL_X = 2.25; // X is the up and down direction
+    public static double PARALLEL_Y = 5.5; // Y is the strafe direction
 
-    public static double PERPENDICULAR_X = -2;
-    public static double PERPENDICULAR_Y = -1.75;
+    public static double PERPENDICULAR_X = -6.75;
+    public static double PERPENDICULAR_Y = 0.75;
 
     //Freight Bot
 //    public static double PARALLEL_X = -0.25; // X is the up and down direction
@@ -80,7 +80,7 @@ public class TwoWheelTrackingLocalizer extends TwoTrackingWheelLocalizer {
 
         //Normal bot
 // Spencer is extra stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy and stinky and foofy and stinkey and foofy and stinky and foofy
-        parallelEncoder = new Encoder(hardwareMap.get(DcMotorEx.class, "frontRight"));
+        parallelEncoder = new Encoder(hardwareMap.get(DcMotorEx.class, "frontLeft"));
         perpendicularEncoder = new Encoder(hardwareMap.get(DcMotorEx.class, "backLeft"));
 
         //Freight bot

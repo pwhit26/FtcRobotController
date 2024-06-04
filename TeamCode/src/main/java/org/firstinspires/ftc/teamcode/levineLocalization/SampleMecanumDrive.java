@@ -7,10 +7,10 @@ import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.M
 import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.MOTOR_VELO_PID;
 import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.RUN_USING_ENCODER;
 import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.TRACK_WIDTH;
+import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.encoderTicksToInches;
 import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.kA;
-import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.kV;
 import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.kStatic;
-import static org.firstinspires.ftc.teamcode.levineLocalization.TwoWheelTrackingLocalizer.encoderTicksToInches;
+import static org.firstinspires.ftc.teamcode.levineLocalization.DriveConstants.kV;
 
 import androidx.annotation.NonNull;
 
@@ -118,8 +118,8 @@ public class SampleMecanumDrive extends MecanumDrive {
 
         //Normal bot
         IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
-                RevHubOrientationOnRobot.LogoFacingDirection.UP,
-                RevHubOrientationOnRobot.UsbFacingDirection.RIGHT));
+                RevHubOrientationOnRobot.LogoFacingDirection.LEFT,
+                RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD));
 
         //Freight Bot
 //        IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
