@@ -129,10 +129,6 @@ public class HuskyLensTest extends LinearOpMode {
                     follower.goToPoints(true, maxVel);
                     break;
                 }
-                else
-                {
-
-                }
             }
 
             telemetry.update();
