@@ -4,6 +4,7 @@ import com.qualcomm.hardware.dfrobot.HuskyLens;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.hardware.Servo;
 
 import org.firstinspires.ftc.robotcore.internal.system.Deadline;
 
@@ -12,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class HaolinIsStupid
 {
     public DcMotor  frontLeft, frontRight, backLeft, backRight;
+    public Servo quincysThing;
     public LinearOpMode myOpMode;
     public HuskyLens huskyLens;
     private final int READ_PERIOD = 1;
@@ -23,10 +25,10 @@ public class HaolinIsStupid
     public void init()
     {
         frontLeft=myOpMode.hardwareMap.get(DcMotor.class,"frontLeft");
-
         frontRight = myOpMode.hardwareMap.get(DcMotor.class, "frontRight");
         backRight = myOpMode.hardwareMap.get(DcMotor.class, "backRight");
         backLeft = myOpMode.hardwareMap.get(DcMotor.class, "backLeft");
+        quincysThing = myOpMode.hardwareMap.get()
         frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         huskyLens = myOpMode.hardwareMap.get(HuskyLens.class, "huskyLens");
