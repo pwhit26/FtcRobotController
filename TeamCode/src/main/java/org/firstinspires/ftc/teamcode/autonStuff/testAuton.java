@@ -29,7 +29,6 @@ public class testAuton extends LinearOpMode {
         Pose2d startPos = new Pose2d(xPosStart, yPosStart, Math.toRadians(headingStart));
         Pose2d endPos = new Pose2d(xPosEnd, yPosEnd, Math.toRadians(headingEnd));
         bot.init();
-
         pointToGoTo.add(new PosesAndActions(startPos, ""));
         pointToGoTo.add(new PosesAndActions(endPos, ""));
         follower.init(pointToGoTo, false, true);
