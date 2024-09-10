@@ -28,7 +28,7 @@ public class HaolinIsStupid
         frontRight = myOpMode.hardwareMap.get(DcMotor.class, "frontRight");
         backRight = myOpMode.hardwareMap.get(DcMotor.class, "backRight");
         backLeft = myOpMode.hardwareMap.get(DcMotor.class, "backLeft");
-        quincysThing = myOpMode.hardwareMap.get()
+        quincysThing = myOpMode.hardwareMap.get(Servo.class, "Servo1");
         frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         huskyLens = myOpMode.hardwareMap.get(HuskyLens.class, "huskyLens");
