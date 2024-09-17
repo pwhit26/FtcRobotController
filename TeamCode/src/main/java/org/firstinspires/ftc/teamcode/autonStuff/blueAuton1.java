@@ -15,7 +15,7 @@ import java.util.ArrayList;
 @Autonomous
 @Config
 
-public class testAuton extends LinearOpMode {
+public class blueAuton1 extends LinearOpMode{
     public HaolinIsStupid bot = new HaolinIsStupid(this);
     ActionRunnerCenterStageAuton SpencerLevinePoopyHead = new ActionRunnerCenterStageAuton(this, bot);
     PointFollower follower = new PointFollower(this, SpencerLevinePoopyHead);
